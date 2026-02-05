@@ -4,7 +4,7 @@ import abtImg from '../../assets/img/About.png'
 const AboutMe = () => {
   return (
     <div className='w-full bg-primary/5 flex justify-center my-15'>
-        <section id='about' className='flex flex-col justify-center items-center my-20 w-full max-w-[1200px] text-[#1b0d14]/60 gap-7
+        <section id='about' className='flex flex-col justify-center items-center my-20 w-full max-w-[1200px] text-[#1b0d14]/60 gap-7 scroll-mt-24
             md:grid md:grid-cols-2 md:grid-rows-2'>
             <div className='flex flex-col gap-4 px-4
                 md:row-start-1 md:col-start-1 md:self-end md:mb-4'>

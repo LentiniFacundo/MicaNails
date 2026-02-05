@@ -11,7 +11,7 @@ const PortfolioContainer = ({title}) => {
     }, [])
 
   return (
-    <section id='portfolio' className='flex flex-col bg-bgc w-full max-w-[1200px] mt-4'>
+    <section id='portfolio' className='flex flex-col bg-bgc w-full max-w-[1200px] mt-4 scroll-mt-24'>
         <div className='flex flex-row justify-between content-center font-black font-extrabold text-2xl p-4'>
             <h3 className='border-b-2 border-b-ac-gold'>{title}</h3>
             <div className='flex flex-row justify-end'>
