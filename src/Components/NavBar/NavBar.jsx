@@ -15,15 +15,15 @@ const NavBar = () => {
             <div className='border-2 border-white w-[90%]'></div>
             <div className='border-2 border-white w-[80%]'></div>
         </div>
-        <ul className={`flex flex-col gap-5 text-md ${isOpen ? '' : 'hidden'}
+        <ul className={`flex flex-col gap-5 ${isOpen ? '' : 'hidden'}
             md:flex-row md:flex md:text-sm`}>
-            <li><a className='text- black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
+            <li><a className='text-black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
                 md: text-xs' onClick={toggleMenu} href="#home">Inicio</a></li>
-            <li><a className='text- black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
-                md: text-xs' onClick={toggleMenu} href="#about">Sobre mi</a></li>
-            <li><a className='text- black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
+            <li><a className='text-black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
                 md: text-xs' onClick={toggleMenu} href="#portfolio">Trabajos</a></li>
-            <li><a className='text- black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
+            <li><a className='text-black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
+                md: text-xs' onClick={toggleMenu} href="#about">Sobre mi</a></li>
+            <li><a className='text-black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
                 md: text-xs' onClick={toggleMenu} href="#contact">Contacto</a></li>
         </ul>
     </nav>

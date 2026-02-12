@@ -9,7 +9,7 @@ const AboutMe = () => {
             <div className='flex flex-col gap-4 px-4
                 md:row-start-1 md:col-start-1 md:self-end md:mb-4'>
                 <h3 className='border-b-2 border-b-ac-gold text-left text-black font-black font-jakarta text-2xl w-fit'>Sobre mi</h3>
-                <p>Hola soy Mica Lentini, pero en mi familia me conocen como "Mi negra trola". Entre mis habilidades mas increibles se encuentra la de poder trapear, trabajar desde mi ordenador y mantener una converzacion telefonica todo al mismo tiempo.... 
+                <p>Hola soy Mica Lentini, pero en mi familia me conocen como "Mi negra trola". Entre mis habilidades mas increibles se encuentra la de poder trapear, trabajar desde mi ordenador, mantener una converzacion telefonica y amamantar a la malvadass de mi hijass todo al mismo tiempo.... 
                     ahh!!! y tambien se hacer uñas!! xD
                 </p>
             </div>
@@ -32,7 +32,7 @@ const AboutMe = () => {
                     <p>Protocolos médicos de esterilización.</p>
                 </article>
             </div>
-            <div className='flex flex-col justify-center items-center w-full max-w-[450px] h-[350px] rounded-lg overflow-hidden bg-slate-100 shadow-xl shadow-slate-200/60 mt-7
+            <div className='flex flex-col justify-center items-center w-full max-w-[600px] h-[350px] rounded-lg overflow-hidden bg-slate-100 shadow-xl shadow-slate-200/60 mt-7
                 md:row-start-1 md:row-end-3 md:col-start-2 md:justify-self-center md:self-center'>
                 <img src={abtImg} alt="About Me" className='w-full h-[350px] object-cover' />
             </div>

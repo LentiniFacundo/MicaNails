@@ -7,6 +7,26 @@
     --color-primary: #f04299;
     --color-ac-gold: #D4AF37;
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
+    --animate-isSent-grow: isSent-grow 1s ease-in-out;
+    --animate-loading: loading 1s infinite ease-in-out alternate;
+    --animate-loading-2: loading-2 1s infinite;
+
+    @keyframes isSent-grow {
+        to { transform: scale(1) }
+        50% { transform: scale(.5) }
+    }
+
+    @keyframes loading {
+        to {
+            transform: rotate(360deg) scale(.9);
+        }
+    }
+
+    @keyframes loading-2 {
+        to {
+            transform: rotate(-720deg)
+        }
+    }
 }
 
 @layer components {

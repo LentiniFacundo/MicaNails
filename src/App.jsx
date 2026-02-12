@@ -6,6 +6,7 @@ import PortfolioContainer from "./Components/Portfolio/PortfolioContainer"
 import AboutMe from "./Components/AboutMe/AboutMe"
 import Comments from "./Components/Comments/Comments"
 import Footer from "./Components/Footer/Footer"
+import Contact from "./Components/Contact/Contact"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <PortfolioContainer title={'Nuestros estilos'}/>
           <AboutMe />
           <Comments />
+          <Contact />
         </MainContainer>
         <Footer />
     </>
