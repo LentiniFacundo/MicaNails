@@ -26,14 +26,14 @@ const PortfolioContainer = ({title}) => {
         <div className='flex flex-row justify-between content-center font-black font-extrabold text-2xl p-4'>
             <h3 className='border-b-2 border-b-ac-gold'>{title}</h3>
             <div className='flex flex-row justify-end'>
-                <a className='text-primary underline text-sm cursor-pointer' onClick={showAllSamples}>Ver todos</a>
+                <button className='text-primary underline text-sm cursor-pointer' onClick={showAllSamples}>Ver todos</button>
             </div>
         </div>
         <div className='flex flex-col justify-center items-center gap-7 mt-4
             sm:grid sm:grid-cols-2 sm:grid-flow-row sm:justify-items-center sm:justify-around
             md:flex md:flex-row'>
             { samples.length > 0 ? samples.slice(0, 4).map(sample => <Item key={sample.id} sample={sample} />) : loading.screen }
-            {showSamples && <AllSamples samples={samples} hideSamples={hideAllSamples} /> }
+            <AllSamples samples={samples} hideSamples={hideAllSamples} showSamples={showSamples} />
         </div>
     </section>
   )

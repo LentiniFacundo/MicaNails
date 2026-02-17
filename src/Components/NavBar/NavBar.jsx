@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -25,6 +26,8 @@ const NavBar = () => {
                 md: text-xs' onClick={toggleMenu} href="#about">Sobre mi</a></li>
             <li><a className='text-black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
                 md: text-xs' onClick={toggleMenu} href="#contact">Contacto</a></li>
+            <li><Link to={'/reservations'} className='text-black font-jakarta transition-colors duration-300 ease-in-out font-semibold hover:text-primary
+                md: text-xs' onClick={toggleMenu} href="#contact">Turnos</Link></li>
         </ul>
     </nav>
   )

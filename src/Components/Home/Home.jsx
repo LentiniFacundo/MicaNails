@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = ({title, description}) => {
   return (
@@ -11,7 +12,9 @@ const Home = ({title, description}) => {
                 md:text-6xl'>{title}</h2>
             <p className='text-lg font-light text-white/90 text-center
                 md:text-xl'>{description}</p>
-            <button className='bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-lg text-base font-bold transition-transform hover:scale-105 shadow-xl cursor-pointer'>Reservar turno</button>
+                <Link to={'/reservations'}>
+                    <button className='bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-lg text-base font-bold transition-transform hover:scale-105 shadow-xl cursor-pointer'>Reservar turno</button>
+                </Link>
         </div>
     </section>
   )

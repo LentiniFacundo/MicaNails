@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import Success from "./Success";
 import Error from "./Error";
@@ -6,19 +6,24 @@ import { publicKEY, serviceID, templateID } from "../../utils/formSettings";
 
 const Contact = () => {
     const [isSent, setIsSent] = useState('pending')
+    const [buttonState, setButtonState] = useState(false)
+
+    const handleButton = bool => setButtonState(bool)
 
     const closeIsSent = () => setTimeout(() => {
         setIsSent('pending')
     }, 4000);
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        handleButton(true)
         emailjs.sendForm(`${serviceID}`, `${templateID}`, e.target, `${publicKEY}`)
             .then(() => setIsSent('sent'))
             .catch(e => setIsSent('error'))
             .finally(() => {
                 e.target.reset()
                 closeIsSent()
+                handleButton(false)
             })
     }
 
@@ -104,7 +109,9 @@ const Contact = () => {
                             className="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-ac-gold/50 transition-all resize-none"
                         ></textarea>
                     </div>
-                    <button className="w-full bg-primary text-white font-bold py-4 rounded-2xl shadow-xl shadow-slate-200 hover:bg-primary/90 hover:-translate-y-1 transition-all duration-300 cursor-pointer" type="submit">Enviar Mensaje</button>
+                    <button className="w-full bg-primary text-white font-bold py-4 rounded-2xl shadow-xl shadow-slate-200 hover:bg-primary/90 hover:-translate-y-1 transition-all duration-300 cursor-pointer" 
+                        disabled={buttonState}
+                        type="submit">{buttonState ? 'Enviando...' : 'Enviar Mensaje'}</button>
                 </form>
             </div>
             {isSent === 'sent' && <Success />}

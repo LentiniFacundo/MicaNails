@@ -16,17 +16,16 @@ const Footer = () => {
                 <p>Lunes a viernes: 09:00 a 20:00</p>
                 <p>Sabado y domingo: 10:00 a 15:00</p>
             </div>
-            <div>
-                <span className='material-symbols-outlined text-primary'>location_on</span>
-                <h3 className='font-black'>Ubicacion</h3>
-                <p>Rio Pilcomayo 2332, Pablo Podesta. Tres De Febrero</p>
-                <div className='rounded-lg overflow-hidden mt-5'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.097205797958!2d-58.614886523631206!3d-34.57640687296406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb96e328f3569%3A0x2a1ad0c35f6b63cb!2sRio%20Pilcomayo%202332%2C%20B1687AQL%20Pablo%20Podesta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1770266293093!5m2!1ses!2sar"></iframe>
+            <div className='flex flex-col
+                sm:flex-row'>
+                <div>
+                    <span className='material-symbols-outlined text-primary'>location_on</span>
+                    <h3 className='font-black'>Ubicacion</h3>
+                    <p>Rio Pilcomayo 2332, Pablo Podesta. Tres De Febrero</p>
                 </div>
-            </div>
-            <div>
-                <h3></h3>
-                <p></p>
+                <div className='rounded-lg overflow-hidden mt-5'>
+                    <iframe className='w-30 h-20' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.097205797958!2d-58.614886523631206!3d-34.57640687296406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb96e328f3569%3A0x2a1ad0c35f6b63cb!2sRio%20Pilcomayo%202332%2C%20B1687AQL%20Pablo%20Podesta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1770266293093!5m2!1ses!2sar"></iframe>
+                </div>
             </div>
         </div>
     </footer>
