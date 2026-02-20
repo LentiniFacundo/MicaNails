@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Success = () => {
   return (
     <div className='fixed top-14 right-4 z-50 flex flex-row w-fit justify-center items-center p-4 border rounded-lg border-slate-200 bg-white shadow shadow-2xl animate-isSent-grow'>

@@ -58,11 +58,11 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="flex gap-2 mt-3">
-                        <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-ac-gold hover:text-black transition-all cursor-pointer">
-                            IG
+                        <div className="w-10 h-10 rounded-lg border border-white/20 flex items-center justify-center hover:bg-ac-gold hover:text-black transition-all cursor-pointer">
+                            <a href="https://www.instagram.com/mica.lentini/" target="_blank"><img src="/public/instagram-icon.svg" alt="Instagram Logo" /></a>
                         </div>
-                        <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-ac-gold hover:text-black transition-all cursor-pointer">
-                            WA
+                        <div className="w-10 h-10 rounded-lg border border-white/20 flex items-center justify-center hover:bg-ac-gold hover:text-black transition-all cursor-pointer">
+                            <a href="https://wa.me/number" target="_blank"><img src="/public/whatsapp-icon.svg" alt="WhatsApp Logo" /></a>
                         </div>
                     </div>
                 </div>

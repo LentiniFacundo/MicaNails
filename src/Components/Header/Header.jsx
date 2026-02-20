@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Header = ({title, children}) => {
   return (
     <header className='w-full flex flex-col bg-bgc px-4 sticky top-0 z-50

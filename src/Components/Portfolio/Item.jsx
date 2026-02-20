@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Item = ({sample}) => {
   return (
     <article className='flex flex-col justify-center items-start rounded-lg overflow-hidden shadow-2xs shadow-slate-500 border border-slate-100 w-full max-w-[500px] relative

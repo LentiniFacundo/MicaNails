@@ -10,11 +10,14 @@ import Contact from "./Components/Contact/Contact"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Reservations } from "./Components/Reservations/Reservations"
 import Error404 from "./Components/404/Error404"
+import ScrollToTop from "./utils/ScrollToTop"
+import AdminDashBoard from "./Components/AdminDashboard/AdminDashBoard"
 
 function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={
           <>
@@ -31,7 +34,7 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path="/reservations" element={<Reservations/>} />
+        <Route path="/reservations/*" element={<Reservations/>} />
         <Route path="*" element={<Error404/>} />
       </Routes>
     </BrowserRouter>

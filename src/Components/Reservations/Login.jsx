@@ -6,7 +6,6 @@ const Login = ({handleUserData}) => {
 
     const handleLogIn = async () => {
         let result = await signInWithPopup(auth, provider)
-        console.log(result)
         handleUserData(result.user)
     }
 

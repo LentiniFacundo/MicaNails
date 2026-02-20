@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Comments = () => {
   return (
     <section className='flex flex-col justify-center items-center w-full max-w-[1200px] mb-15'>

@@ -8,7 +8,11 @@ const Appointments = ({appointments}) => {
         <div className="flex flex-col justify-center items-center gap-4
             sm:flex-row">
             {appointments.map(appointment => (
-                <article key={appointment.id} className="border border-neutral-50 bg-bgc rounded-lg shadow-sm p-4 my-2 text-slate-600 font-black">
+                <article key={appointment.id} className="border border-neutral-50 bg-white rounded-lg shadow-sm p-4 my-2 text-slate-600 font-black hover:bg-slate-100 hover:shadow-2xl hover:scale-110 transition-all">
+                    <div className="font-jakarta flex flex-row gap-2 text-black">
+                        <span className="material-symbols-outlined text-primary" style={{fontVariationSettings:"'FILL' 1" }}>check_circle</span>
+                        <p>Confirmado</p>
+                    </div>
                     <p>Día: {appointment.date}</p>
                     <p>Hora: {appointment.time}</p>
                 </article>

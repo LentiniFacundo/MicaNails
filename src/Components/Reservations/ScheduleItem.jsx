@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const ScheduleItem = ({reservation, isSelected, onSelect}) => {
   const handleSelected = () => {
     onSelect()
