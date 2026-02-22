@@ -40,7 +40,7 @@ const ScheduleList = ({ reservationList, userLogged}) => {
         <main className="flex flex-col my-4 w-full gap-3 justify-center items-center">
             <div className="flex flex-col flex-wrap gap-3 justify-center items-center
                 sm:flex-row">
-            {  reservationList.filter(reservation => !reservation.booked).map(reservation => (
+            {  reservationList.filter(reservation => !reservation.booked).sort((a, b) => a.date.localeCompare(b.date)).map(reservation => (
                     <ScheduleItem key={reservation.id} reservation={reservation} isSelected={selected?.id === reservation.id} onSelect={() => setSelected(reservation)} />
             )) }
             </div>
